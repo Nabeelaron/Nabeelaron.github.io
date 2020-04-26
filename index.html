@@ -5,14 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabeel aron</title>
+    <script>
+    </script>
+
+    <style>
+        body {
+            background-color: #000040;
+            color: whitesmoke;
+            text-align: center;
+            font-family: cursive;
+        }
+        
+        h1 {
+            font-size: 90px;
+        }
+        
+        footer {
+            position: relative;
+            bottom: -30vh;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <h1> Thank you !
         <hr/>
     </h1>
+    <h2 id="count">4</h2>
     <h3> You are being redirected to the new Portfolio website</h3>
-    <hr/>footer
+    <hr/>
+    <footer>
+        <blockquote>
+            " Nothing but the whistling of cold and lonely wind "</blockquote>
+    </footer>
+    <script>
+        const count = document.querySelector('#count');
+        var limit = 3;
+        setInterval(() => {
+            if (limit >= 0)
+                count.textContent = limit;
+            // else window.location = "http://google.com";
+            --limit
+        }, 1000)
+    </script>
+
 </body>
 
 </html>
